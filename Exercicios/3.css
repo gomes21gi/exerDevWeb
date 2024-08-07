@@ -1,0 +1,8 @@
+.imagem{
+    border: solid 5px black;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
