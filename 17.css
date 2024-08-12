@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+nav {
+    width: 200px;
+}
+
+.vertical-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #4B0082; /* Fundo roxo escuro */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.vertical-menu li {
+    border-bottom: 1px solid #6A0DAD; /* Borda em um tom mais claro de roxo */
+}
+
+.vertical-menu li:last-child {
+    border-bottom: none;
+}
+
+.vertical-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+.vertical-menu a:hover {
+    background-color: black; /* Tom roxo padrão ao passar o mouse */
+}
+
+/* Diferentes tons de roxo ao passar o mouse */
+.vertical-menu li:nth-child(1) a:hover {
+    background-color: #7B68EE; /* Roxo BlueViolet */
+}
+
+.vertical-menu li:nth-child(2) a:hover {
+    background-color: #9370DB; /* Roxo MediumPurple */
+}
+
+.vertical-menu li:nth-child(3) a:hover {
+    background-color: #BA55D3; /* Roxo MediumOrchid */
+}
+
+.vertical-menu li:nth-child(4) a:hover {
+    background-color: #DDA0DD; /* Roxo Plum */
+}
