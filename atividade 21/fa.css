@@ -1,0 +1,116 @@
+body, html {
+    height: 100%;
+    font-family: 'Georgia', serif;
+    color: white;
+    background: linear-gradient(270deg, #0f0c29, #302b63, #24243e);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 0.9em;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo da Formação Acadêmica */
+.education {
+    text-align: left;
+    max-width: 800px;
+    width: 100%;
+}
+
+.education h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.education-item h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.education-item p {
+    margin: 5px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .education h1 {
+        font-size: 2.5em;
+    }
+
+    .menu a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .education h1 {
+        font-size: 2em;
+    }
+
+    .education-item {
+        padding: 10px;
+    }
+}
