@@ -1,0 +1,84 @@
+body, html {
+    height: 100%;
+    font-family: 'Georgia', serif;
+    color: white;
+    background: linear-gradient(269deg, #0f0c29, #302b63, #24243e);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 0.9em;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo da Formação Acadêmica */
+.education {
+    text-align: left;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 470px;
+}
+
+.education-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.education-item h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.education-item p {
+    margin: 5px 0;
+}

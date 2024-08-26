@@ -1,0 +1,144 @@
+body, html {
+    height: 100%;
+    font-family: 'Georgia', serif;
+    color: white;
+    background: linear-gradient(269deg, #0f0c29, #302b63, #24243e);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    padding: 20px;
+    box-sizing: border-box;
+}
+.contact-info {
+    text-align: right;
+    font-size: 0.9em;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+/* Estilo dos Projetos */
+.projects {
+    text-align: left;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 470px;
+}
+
+.project-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.project-item h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.project-item p {
+    margin: 5px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .projects h1 {
+        font-size: 2.5em;
+    }
+
+    .menu a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .projects h1 {
+        font-size: 2em;
+    }
+
+    .project-item {
+        padding: 10px;
+    }
+}
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+footer .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
